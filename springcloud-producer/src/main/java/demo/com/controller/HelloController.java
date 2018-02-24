@@ -9,12 +9,12 @@ public class HelloController {
 	
 	@RequestMapping("/hi")
     public String hi() {
-        return "Hi Spring Cloud";
+        return "Hi Spring Cloud"+"~[from producer]";
     }
 	
 	@RequestMapping("/hello")
     public String hello(@RequestParam String name) {
-        return "hello "+name+"，this is first messge";
+        return "hello "+name+"，this is first messge"+"~[from producer]";
     }
 	
 }

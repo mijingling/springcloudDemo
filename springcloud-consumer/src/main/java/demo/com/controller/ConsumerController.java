@@ -15,12 +15,12 @@ public class ConsumerController {
 	
     @RequestMapping("/hi")
     public String hi(){
-    	return helloClient.hi()+"##from consumer##";
+    	return helloClient.hi();
     }
     
     @RequestMapping("/hello/{name}")
     public String hello(@PathVariable("name") String name) {
-        return helloClient.hello(name)+"##from consumer##";
+        return helloClient.hello(name);
     }
 
 }
