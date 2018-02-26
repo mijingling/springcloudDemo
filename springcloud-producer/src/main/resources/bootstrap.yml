@@ -1,0 +1,9 @@
+spring:
+    application:
+        name: spring-cloud-producer
+    cloud:
+        config:
+            uri: http://localhost:8888
+            fail-fast: true
+            username: admin
+            password: 123456

@@ -1,0 +1,9 @@
+server:
+    host: localhost
+    port: 8000
+    
+eureka:    
+    server:
+        host: ${server.host}
+        port: ${server.port}
+

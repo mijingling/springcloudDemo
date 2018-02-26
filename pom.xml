@@ -23,13 +23,17 @@
 	
 	<modules>
 		<module>springcloud-eureka</module>
+		<module>springcloud-config</module>
 		<module>springcloud-producer</module>
 		<module>springcloud-consumer</module>
 		<module>springcloud-producer-client</module>
 	</modules>
 	
 	<dependencies>
-		
+		<dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
 	</dependencies>
 	
 	<dependencyManagement>

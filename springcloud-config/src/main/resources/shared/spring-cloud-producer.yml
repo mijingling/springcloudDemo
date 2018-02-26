@@ -1,0 +1,8 @@
+server:
+    port: 9000
+
+eureka:
+    server:
+        host: localhost
+        port: 8000
+            
