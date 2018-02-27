@@ -1,0 +1,15 @@
+spring:
+    application:
+        name: spring-cloud-gateway
+    cloud:
+        config:
+            uri: http://localhost:8888
+            fail-fast: true
+            username: admin
+            password: 123456
+
+#eureka服务个性配置(参数固定，不随开发环境变更)      
+eureka:
+    client:
+        register-with-eureka: false
+        fetch-registry: false

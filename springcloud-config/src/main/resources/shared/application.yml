@@ -1,5 +1,7 @@
 #配置eureka服务地址
 eureka:
+    instance:
+        prefer-ip-address: true
     client:
         service-url:
             defaultZone: http://${eureka.server.host}:${eureka.server.port}/eureka/

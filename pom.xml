@@ -24,9 +24,12 @@
 	<modules>
 		<module>springcloud-eureka</module>
 		<module>springcloud-config</module>
+		<module>springcloud-gateway</module>
+		<module>springcloud-common</module>
+		<module>springcloud-agent</module>
 		<module>springcloud-producer</module>
-		<module>springcloud-consumer</module>
 		<module>springcloud-producer-client</module>
+		<module>springcloud-consumer</module>
 	</modules>
 	
 	<dependencies>
@@ -34,13 +37,17 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
 	</dependencies>
 	
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-starter-parent</artifactId>
+				<artifactId>spring-cloud-dependencies</artifactId>
 				<version>Dalston.RELEASE</version>
 				<type>pom</type>
 				<scope>import</scope>
