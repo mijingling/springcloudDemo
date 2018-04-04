@@ -16,7 +16,7 @@ import org.springframework.session.data.redis.config.annotation.web.http.EnableR
 @EnableDiscoveryClient
 @EnableZuulProxy
 @EnableRedisHttpSession(redisFlushMode = RedisFlushMode.IMMEDIATE)
-@ServletComponentScan("demo.com")
+@ServletComponentScan("demo.com.gateway")
 public class SpringCloudGatewayApplication {
 
 	public static void main(String[] args) {

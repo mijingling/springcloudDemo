@@ -39,7 +39,7 @@ spring:
         poolPreparedStatements: true
         maxOpenPreparedStatements: 20
 mybatis:
-    basepackage: demo.com.mapper
+    basepackage: demo.com.gateway.mapper
     xmlLocation: classpath:mapper/**/*.xml
 
 eureka:
@@ -93,7 +93,7 @@ ribbon:
         enabled: true
         
 swagger:
-    basepackage: com.github.wxiaoqi.gate.back.api
+    basepackage: demo.com.api
     service:
         name: 权限管理
         description: 权限管理
